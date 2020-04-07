@@ -16,6 +16,22 @@ border: 2px solid darkgray;
 width: 40px;
 height: 40px;
 }
+.big_key{
+    float: left;
+    padding: 2px;
+margin: 2px;
+border: 2px solid darkgray;
+width: 70px;
+height: 40px;
+}
+.special_key{
+    float: left;
+    padding: 2px;
+margin: 2px;
+border: 2px solid darkgray;
+width: 250px;
+height: 40px;
+}
 .clear{
     clear: both;
 }
