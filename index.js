@@ -2,11 +2,7 @@ let wrapper = document.createElement("div");
 wrapper.id = "board";
 document.body.append(wrapper);
 let arr = [192,49, 50, 51, 52, 53, 54, 55, 56, 57, 48, 45, 61,8,9,113, 119, 101, 114, 116, 121, 117, 105, 111, 112, 91, 93, 92,20,97, 115, 100, 102, 103, 104, 106, 107, 108, 59, 39, 13,16,122, 120, 99, 118, 98, 110, 109, 44, 46, 47,16,38,17,91.1,18,32,18,93.1,17,37,40,39];// [49, 50, 51, 52, 53, 54, 55, 56, 57, 48, 45, 61] [113, 119, 101, 114, 116, 121, 117, 105, 111, 112, 91, 93, 92][97, 115, 100, 102, 103, 104, 106, 107, 108, 59, 39, 13][122, 120, 99, 118, 98, 110, 109, 44, 46, 47]
-//document.onkeypress = function (event) {
-//    console.log(event);
-//arr.push(event.charCode);
-//console.log(arr);
-//}
+
 function init() {
     let res = '';
     for (let index = 0; index < arr.length; index++) {
@@ -80,12 +76,9 @@ document.onkeypress = function (event){
     document.querySelectorAll('#board .special_key').forEach(element => {
         element.classList.remove('active');
     });
-    /*let code = this.getAttribute('data');
-        this.classList.add('active');*/
+    
     document.querySelector('#board .key[data="' + event.keyCode + '"]').classList.add('active');
-    console.log(event);
-    //try {document.querySelector('#board .big_key[data="' + event.keyCode + '"]').classList.add('active')} finally{};
-    //try {document.querySelector('#board .special_key[data="' + event.keyCode + '"]').classList.add('active')} finally{};
+    
 
 };
 document.querySelectorAll('#board .key').forEach(element => {
