@@ -2,6 +2,7 @@
 display: block;
 padding: 1px;
 border: 1px solid black;
+
 width: fit-content;
 }
 #board::after{
