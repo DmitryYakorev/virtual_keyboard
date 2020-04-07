@@ -1,0 +1,24 @@
+#board{
+display: block;
+padding: 1px;
+border: 1px solid black;
+}
+#board::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.key{
+    float: left;
+    padding: 2px;
+margin: 2px;
+border: 2px solid darkgray;
+width: 40px;
+height: 40px;
+}
+.clear{
+    clear: both;
+}
+.active{
+    background: darkgreen;
+}
