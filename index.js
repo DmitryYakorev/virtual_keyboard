@@ -83,9 +83,9 @@ document.onkeypress = function (event){
     /*let code = this.getAttribute('data');
         this.classList.add('active');*/
     document.querySelector('#board .key[data="' + event.keyCode + '"]').classList.add('active');
-    console.log(event.keyCode);
-    document.querySelector('#board .big_key[data="' + event.keyCode + '"]').classList.add('active');
-    document.querySelector('#board .special_key[data="' + event.keyCode + '"]').classList.add('active');
+    console.log(event);
+    //try {document.querySelector('#board .big_key[data="' + event.keyCode + '"]').classList.add('active')} finally{};
+    //try {document.querySelector('#board .special_key[data="' + event.keyCode + '"]').classList.add('active')} finally{};
 
 };
 document.querySelectorAll('#board .key').forEach(element => {
